@@ -1,0 +1,132 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+:root {
+  --title: #fffcf9;
+  --subtitle: #b3b3b3;
+  --bg-button: #e9e6e3;
+  --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+}
+
+body {
+  overflow: hidden;
+  background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.background-images {
+  top: 0;
+  background: url('../../public/apple-touch-icon.png') top center no-repeat;
+  background-size: auto;
+
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50vh;
+}
+
+h1 {
+  color: #fffcf9;
+  align-items: center;
+  justify-content: center;
+  margin-top: -15ch;
+  font-size: 5ch;
+  position: fixed;
+}
+
+p {
+  color: #b3b3b3;
+}
+
+button {
+  background-color: #e9e6e3;
+  justify-content: center;
+  align-items: center;
+  margin-left: 31%;
+  padding: 18px 17px 17px 50px;
+  width: 38%;
+  border-radius: 10px;
+  color: #000;
+  font-size: 2ch;
+  font-weight: bold;
+  background-image: url('../../public/apple-touch-icon.png');
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 15%;
+  /* ajuste a altura da imagem conforme necessário */
+}
+
+
+
+button:hover {
+  cursor: pointer;
+  background-color: #b3b3b3;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 5rem;
+  color: #fffcf9;
+  max-width: 50%;
+  min-width: 50%;
+  position: fixed;
+  padding: 20px;
+
+}
+
+.movie-info h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px #000;
+  margin-left: 13%;
+  margin-top: -18%;
+  position: fixed;
+  max-width: 50%;
+  /* define a largura máxima da imagem como 50% */
+  min-width: 50%;
+}
+
+.movie-info p {
+  font-size: 1rem;
+  margin-top: -2ch;
+  color: #fff;
+  max-width: 45%;
+  /* define a largura máxima da imagem como 50% */
+  min-width: 45%;
+  margin-left: 12%;
+  position: fixed;
+}
+
+.movie-info img {
+  max-width: 10%;
+  /* define a largura máxima da imagem como 50% */
+  min-width: 5%;
+  margin-top: -13ch;
+  position: fixed;
+}
+
+
+.box-down {
+}
+
+.box-down.show {
+  position: absolute;
+  margin-top: 30%;
+}
